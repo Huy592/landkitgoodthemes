@@ -4,199 +4,509 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landkit</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="https://kit.fontawesome.com/6161a2d888.js" crossorigin="anonymous"></script>
-</head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+  </head>
 <body>
+    <!-- phan header-->
     <header>
-        <div class="navbar">
-            <ul class= "navbar-list">
-                <li class="logo">
-                    <img src = "./assets/brand.svg"/>
-                </li>
-                <li>
-                    <ul class="navbar-center">
-                        <li class="nav landings">
-                            <span class="landings">Landings</span>
-                            <div class="modal" id = "modal1">
-                                <div class="modal-container">
-                                <div class="left-partm">
-                                    <div class="content">
-                                    <p>Want to see an overview?</p>
-                                    <p>See all the pages at once</p>
-                                    <button>View All Pages</button>
-                                    </div> 
+        <div class="nav-bar">
+            <div class="navbar-brand">
+                <img src="/assets/brand.svg" alt="">
+            </div>
+            </div>
+            <button class="navbar-toggler" type="button">
+              <i class="fal fa-bars"></i>
+              </button>
+            <ul class="navbar-dropmenu">
+              <div class="navbar-items">
+                <div class="navbar-item">
+                    <a href="" class="dropdown-toggle">
+                        Landings
+                    </a>
+                    <div class="dropdown-menu" id="dropdown-landings">
+                        <div class="dropdown-menu-container landings-container">
+                            <div class="left-menu-container">
+                                <h4>Want to see an overview?</h4>
+                                <p>See all the pages at once</p>
+                                <button>View all pages</button>
+                            </div>
+                            <div class="right-menu-container">
+                                <div class="right-part">
+                                    <h3 class="dropdown-header">
+                                        Services
+                                      </h3>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Coworking
+                                      </a>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Rental
+                                      </a>
+                                      <a class="dropdown-item mb-5" href="#">
+                                        Job Listing
+                                      </a>
+                                    <h3 class="dropdown-header">
+                                        Apps
+                                    </h3>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Desktop
+                                      </a>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Mobile
+                                      </a>
                                 </div>
-                                <div class="right-partm">
-                                    <div class="right-part1">
-                                    <ul class = "rpt">
-                                        <li class="modal-title">SERVICE</li>
-                                        <li>Coworking</li>
-                                        <li>Rental</li>
-                                        <li>Job Listing</li>
-                                    </ul>
-                                    <ul class = "rpt">
-                                        <li class="modal-title">APPS</li>
-                                        <li>Desktop</li>
-                                        <li>Mobile</li>
-                                    </ul>
-                                    </div>
-                                    <div class="right-part2">
-                                    <ul class = "rpt">
-                                        <li class="modal-title">WEB</li>
-                                        <li>Basic</li>
-                                        <li>Startup</li>
-                                        <li>Enterprise</li>
-                                        <li>Service</li>
-                                        <li>Cloud Hosting</li>
-                                        <li>Agency</li>
-                                        <li>Framework<p style="color: #335eea;">(NEW)</p></li>
-                                    </ul>
-                                    </div>
+                                <div class="left-part">
+                                    <h3 class="dropdown-header">
+                                        Web
+                                      </h3>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Basic
+                                      </a>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Startup
+                                      </a>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Enterprise
+                                      </a>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Service
+                                      </a>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Cloud Hosting
+                                      </a>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Agency
+                                      </a>
+                                      <a class="dropdown-item" style="color:#505590" href="#">
+                                        Framework <span class="h6 text-uppercase text-primary">(new)</span>
+                                      </a>
                                 </div>
-                                </div>
-
+                            </div>
                         </div>
-                        </li>
-                        <li class="nav">
-                            <span>Pages</span>
-                        </li>
-                        <li class="nav">
-                            <span>Account</span>
-                        </li>
-                        <li class="nav" style = "margin-left: 20px;">
-                            <span>Documentation</span>
-                        </li>
-                    </ul>
-                </li>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <a href="" class="dropdown-toggle">
+                        Pages
+                    </a>
+                    <div class="dropdown-menu" id="dropdown-pages">
+                      <div class="dropdown-menu-container pages-container">
+                        <div class="cols-pages">
+                          <div class="col1 col">
+                            <h3 class="dropdown-header">
+                              Career
+                            </h3>
+                            <div class="dropdown-item" style="color:#505590">
+                              Listing
+                            </div>
+                            <div class="dropdown-item" style="color:#505590">
+                              Opening
+                            </div>
+                            <h3 class="dropdown-header">
+                              Company
+                            </h3>
+                            <div class="dropdown-item" style="color:#505590">
+                              About
+                            </div>
+                            <div class="dropdown-item" style="color:#505590">
+                              Pricing
+                            </div>
+                            <div class="dropdown-item" style="color:#505590">
+                              Term
+                            </div>
+                          </div>
+                          <div class="col2 col">
+                            <h3 class="dropdown-header">
+                              Help Center
+                            </h3>
+                            <div class="dropdown-item" style="color:#505590">
+                              Over view
+                            </div>
+                            <div class="dropdown-item" style="color:#505590">
+                              Article
+                            </div>
+                            <h3 class="dropdown-header">
+                              Contact
+                            </h3>
+                            <div class="dropdown-item" style="color:#505590">
+                              Basic
+                            </div>
+                            <div class="dropdown-item" style="color:#505590">
+                              Cover
+                            </div>
+                          </div>
+                          <div class="col3 col">
+                              <h3 class="dropdown-header">
+                                Blog
+                              </h3>
+                              <div class="dropdown-item" style="color:#505590">
+                                Over view
+                              </div>
+                              <div class="dropdown-item" style="color:#505590">
+                                Rich View
+                              </div>
+                              <div class="dropdown-item" style="color:#505590">
+                                Article
+                              </div>
+                              <div class="dropdown-item" style="color:#505590">
+                                Shortcase
+                              </div>
+                              <div class="dropdown-item" style="color:#505590">
+                                Search
+                            </div>
+                          </div>
+                          <div class="col4 col">
+                              <h3 class="dropdown-header">
+                                Portofilo
+                              </h3>
+                              <div class="dropdown-item" style="color:#505590">
+                                Masonry
+                              </div>
+                              <div class="dropdown-item" style="color:#505590">
+                                Grids Row
+                              </div>
+                              <div class="dropdown-item" style="color:#505590">
+                                Parallax
+                              </div>
+                              <div class="dropdown-item" style="color:#505590">
+                                Case Study
+                              </div>
+                              <div class="dropdown-item" style="color:#505590">
+                                Slide Bar
+                              </div>
+                              <div class="dropdown-item" style="color:#505590">
+                                Slide Bar : Fluid
+                              </div>
+                              <div class="dropdown-item" style="color:#505590">
+                                Basic Grid
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="navbar-item">
+                    <a href="" class="dropdown-toggle">
+                        Account
+                    </a>
+                    <div class="dropdown-menu dropdown-account">
+                        <ul class="dropdown-acc-layer1">
+                          <li class="drop-acc-item item1">
+                                <div class="drop-acc-title">Settings</div>
+                                <i class="fal fa-greater-than"></i>
+                                      <div div class="drop-acc-layer2-item1">
+                                          <ul class="layer2-container">
+                                            <li>General</li>
+                                            <li>General</li>
+                                            <li>General</li>
+                                            <li>General</li>
+                                            <li>General</li>
+                                          </ul>
+                                      </div>
+                          </li>
+                          <li class="drop-acc-item item2">
+                            <div class="drop-acc-title" >Sign In</div>
+                            <i class="fal fa-greater-than"></i>
+                            <div div class="drop-acc-layer2-item2">
+                              <ul class="layer2-container">
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                              </ul>
+                          </div>
+                          </li>
+                          <li class="drop-acc-item item3">
+                            <div class="drop-acc-title" >Sign Up</div>
+                            <i class="fal fa-greater-than"></i>
+                            <div div class="drop-acc-layer2-item3">
+                              <ul class="layer2-container">
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                              </ul>
+                          </div>
+                          </li>
+                          <li class="drop-acc-item item4">
+                            <div class="drop-acc-title" >Password Reset</div>
+                            <i class="fal fa-greater-than"></i>
+                            <div div class="drop-acc-layer2-item4">
+                              <ul class="layer2-container">
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                              </ul>
+                          </div>
+                          </li>
+                          <li class="drop-acc-item item5">
+                            <div class="drop-acc-title" >Errors</div>
+                            <i class="fal fa-greater-than"></i>
+                            <div div class="drop-acc-layer2-item5">
+                              <ul class="layer2-container">
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                                <li>General</li>
+                              </ul>
+                          </div>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <a href="" class="dropdown-toggle">
+                        Documentation
+                    </a>
+                    <div class="dropdown-menu drop-doc">
+                      <div class="dropdown-menu-doc">
+                        <ul>
+                          <li class = "dropdown-item-doc">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M8 3v.5A1.5 1.5 0 009.5 5h5A1.5 1.5 0 0016 3.5V3h2a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h2z" fill="#335EEA" opacity=".3"></path><path d="M11 2a1 1 0 012 0h1.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11z" fill="#335EEA"></path><rect fill="#335EEA" opacity=".3" x="7" y="10" width="5" height="2" rx="1"></rect><rect fill="#335EEA" opacity=".3" x="7" y="14" width="9" height="2" rx="1"></rect></g></svg>
+                            <div class="item-doc-des">
+                            <h3>
+                              Documentation
+                            </h3>
+                            <p>
+                              Customizing and building
+                            </p>
+                          </div>
+                          </li>
+                          <li class = "dropdown-item-doc">
+                            
+                              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><rect fill="#335EEA" x="4" y="4" width="7" height="7" rx="1.5"></rect><path d="M5.5 13h4a1.5 1.5 0 011.5 1.5v4A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-4A1.5 1.5 0 015.5 13zm9-9h4A1.5 1.5 0 0120 5.5v4a1.5 1.5 0 01-1.5 1.5h-4A1.5 1.5 0 0113 9.5v-4A1.5 1.5 0 0114.5 4zm0 9h4a1.5 1.5 0 011.5 1.5v4a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-4a1.5 1.5 0 011.5-1.5z" fill="#335EEA" opacity=".3"></path></g></svg>                     
+                              <div class="item-doc-des">
+                              <h3>
+                                Components
+                              </h3>
+                              <p>
+                                Full list of components
+                              </p>
+                            </div>
+                          </li>
+                            <li class = "dropdown-item-doc">
+                              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"></path><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"></rect><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"></rect></g></svg>
+                              <div class="item-doc-des">
+                              <h3>
+                                  Changelog
+                                </h3>
+                                <p>
+                                  Keep track of changes
+                                </p>
+                              </div>
+                              <div class="badge" id = "badge-doc">
+                                1.2.2
+                              </div>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
                 <li>
-                    <button class="btn buy"><a href="#">Buy Now</a></button>
+                  <button class = "button-buy">
+                    <a href="#" style="color: white">
+                        Buy now
+                    </a>
+                </button>
                 </li>
             </ul>
         </div>
     </header>
-    <section class="banner">
-        <div class="left-part">
-            <p>
-                Welcome to <span style="color:#335EEB">Landkit</span>.
-                <br>
-                Develop anything.
-            </p>
-            <br>
-            <div class="description">
-                Build a beautiful, modern website with flexible
-                <br>
-                Bootstrap components built from scratch.
-            </div>
-            <div class="buttons">
-                <button class="btn" id="btn-view">
-                View all pages
-                <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
-                </button>
-                <button class="btn" id="btn-doc">
-                Documentation
-                </button>
-            </div>
-        </div>
-        <div class="right-part">
-            <div class="banner-image">
-                <img src="./assets/illustration-2.png" alt="">
-            </div>
-        </div>
-    </section>
-    <section class = "target-type">
-        <ul class="targets">
-            <li class="target">
-                <img src="./assets/icon/icon3.png" alt="">
-                <p class="target-title">Built for developers</p>
-                <br>
-                <p class="target-des">Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components</p>
-            </li>
-            <li class="target">
-                <img src="./assets/icon/icon1.png" alt="">
-                <p class="target-title">Designed to be modern</p>
-                <br>
-                <p class="target-des">Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.</p>
-            </li>
-            <li class="target">
-                <img src="./assets/icon/icon2.png" alt="">
-                <p class="target-title">Documentation for everything</p>
-                <br>
-                <p class="target-des">We've written extensive documentation for components and tools, so you never have to reverse engineer anything.</p>
-            </li>
-        </ul>
-    </section>
-    <section class="labels">
-        <div class="container">
-           <img src="./assets/img/labels.png" alt="">
-        </div>
-    </section>
-    <section class = "form-resources">
-        <div class="container">
-            <div class="form-sample">
-                <img src="/assets/img/photo-2.jpg" alt="">
-                <form action="">
-                    <input type="text" placeholder= "Name">
-                    <input type="text" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <button type="submit">Dowload a sample</button>
-                </form>
-            </div>
-            <div class="form-description">
-                <div class="title1">
-                    The most useful resource
-                    <br>
-                    <span class="test-success">ever created for <span id="changedText">designer</span></span>
-                </div>
-                <br>
-                <div class="description1">
-                    Using Landkit to build your site means never worrying 
-                    about designing another page or cross browser
-                    compatibility. Our ever-growing library of components
-                    and pre-designed layouts will make your life easier.
-                </div>
-                <div class="checked-items">
-                    <div class="items">
-                        <div class="checked-item-1 item">
-                            <i class="far fa-check-circle"></i> Lifetime updates
-                        </div>
-                        <div class="checked-item-2 item">
-                            <i class="far fa-check-circle"></i> Tech support
-                        </div>
-                        <div class="checked-item-3 item">
-                            <i class="far fa-check-circle"></i> Tons of assets
-                        </div>
-                        <div class="checked-item-4 item">
-                            <i class="far fa-check-circle"></i> Integration ready
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="exp-building">
-        <div class="exp-title">
-            We have lots of experience
-            <br>
-            building Bootstrap themes.
-        </div>
-        <div class="exp-des">
-            We've built well over a dozen Bootstrap themes and sold
-            <br>
-            tens of thousands of copies.
-        </div>
-        <div class="exp-des-1 exp">
-            <img src="/assets/icon/icon5.png" alt="">
-            <p>Bootstrap users since the beginning
-                We've been developing with Bootstrap since it was publicly released in 2011.</p>
-        </div>
-        <div class="exp-des-2 exp">
-            <img src="/assets/icon/icon4.png" alt="">
-            <p>Deep understanding of Bootstrap
-                We've watched Bootstrap grow up over the years and understand it better than almost anyone..</p>
-        </div>
+<!-- het phan header-->
+<section class="banner">
+  <div class="left-part">
+      <p>
+          Welcome to <span style="color:#335EEB">Landkit</span>.
+          <br>
+          Develop anything.
+      </p>
+      <br>
+      <div class="description">
+          Build a beautiful, modern website with flexible
+          <br>
+          Bootstrap components built from scratch.
+      </div>
+      <div class="buttons">
+          <button class="btn" id="btn-view">
+          View all pages
+          <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+          </button>
+          <button class="btn" id="btn-doc">
+          Documentation
+          </button>
+      </div>
+  </div>
+  <div class="right-part">
+      <div class="banner-image">
+          <img src="./assets/illustration-2.png" alt="">
+      </div>
+  </div>
+</section>
+<section class = "target-type">
+  <ul class="targets">
+      <li class="target">
+          <img src="./assets/icon/icon3.png" alt="">
+          <p class="target-title">Built for developers</p>
+          <br>
+          <p class="target-des">Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components</p>
+      </li>
+      <li class="target">
+          <img src="./assets/icon/icon1.png" alt="">
+          <p class="target-title">Designed to be modern</p>
+          <br>
+          <p class="target-des">Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.</p>
+      </li>
+      <li class="target">
+          <img src="./assets/icon/icon2.png" alt="">
+          <p class="target-title">Documentation for everything</p>
+          <br>
+          <p class="target-des">We've written extensive documentation for components and tools, so you never have to reverse engineer anything.</p>
+      </li>
+  </ul>
+</section>
+<section class="labels">
+  <div class="container">
+     <img src="./assets/img/labels.png" alt="">
+  </div>
+</section>
+<section class = "form-resources">
+  <div class="container">
+      <div class="form-sample">
+          <img src="/assets/img/photo-2.jpg" alt="">
+          <form action="">
+              <input type="text" placeholder= "Name">
+              <input type="text" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <button type="submit">Dowload a sample</button>
+          </form>
+      </div>
+      <div class="form-description">
+          <div class="title1">
+              The most useful resource
+              <br>
+              <span class="test-success">ever created for <span id="retype">designer</span></span>
+          </div>
+          <br>
+          <div class="description1">
+              Using Landkit to build your site means never worrying
+              <br>
+              about designing another page or cross browser
+              compatibility. Our ever-growing library of components
+              and pre-designed layouts will make your life easier.
+          </div>
+          <div class="checked-items">
+              <div class="items">
+                  <div class="checked-item-1 item">
+                      <i class="far fa-check-circle"></i> Lifetime updates
+                  </div>
+                  <div class="checked-item-2 item">
+                      <i class="far fa-check-circle"></i> Tech support
+                  </div>
+                  <div class="checked-item-3 item">
+                      <i class="far fa-check-circle"></i> Tons of assets
+                  </div>
+                  <div class="checked-item-4 item">
+                      <i class="far fa-check-circle"></i> Integration ready
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="exp-building">
+  <div class="exp-building-des-com">
+    <div class="exp-title">
+      <h3 class="title">We have lots of experience</h3>
 
-    </section>
+      building Bootstrap themes.
+    </div>
+    <div class="exp-des">
+      We've built well over a dozen Bootstrap themes and sold
+      <br>
+      tens of thousands of copies.
+    </div>
+    <div class="exp-des-1 exp">
+      <img src="/assets/icon/icon5.png" alt="">
+      <p>Bootstrap users since the beginning
+        We've been developing with Bootstrap since it was publicly released in 2011.</p>
+    </div>
+    <div class="exp-des-2 exp">
+      <img src="/assets/icon/icon4.png" alt="">
+      <p>Deep understanding of Bootstrap
+          We've watched Bootstrap grow up over the years and understand it better than almost anyone..</p>
+    </div>
+  </div>
+  <div class="exp-buiding-img">
+    <img src="/assets/img/dashkit.jpg" alt="">
+  </div>
+</section>
 </body>
+<script>
+  var retype = {
+	retypePhrases: [
+		'developers',
+		'founders.',
+		'designers.',	
+	],
+	index       : -1,
+	elem        : document.getElementById('retype'),
+	start       : function(){
+		var _this = this;
+		setTimeout( function(){
+			_this.deleteLetter();
+		}, 500 ); // Delay the start of a new word by 3 seconds
+	},// END retype.start()
+	deleteRepeat: function(){
+		this.deleteLetter();
+	},// END retype.deleteRepeat()
+	deleteLetter: function(){
+		var newWord = this.elem.innerHTML;
+		if( newWord.length > 0 ){
+			newWord = newWord.substring(0, newWord.length - 1);
+			var _this = this;
+			setTimeout( function(){
+				_this.elem.innerHTML = newWord;
+				_this.deleteRepeat();
+			}, 75 );
+		}else{
+			this.newLetter();
+		}// END if( newWord.length > 0 )
+	},// END retype.deleteLetter()
+	newRepeat   : function(){
+		this.newLetter();
+	},// END retype.newRepeat()
+	newLetter   : function(){
+		var newWord = this.elem.innerHTML;
+		if( newWord.length === 0 ){
+			this.index++;
+			if( this.index >= this.retypePhrases.length ){
+				this.index = 0;
+			}
+		}// END if( newWord.length === 0 )
+		var newLetters = this.retypePhrases[ this.index ];
+		if( newLetters.length > newWord.length ){
+			newLetters = newLetters.substring(0, ( newWord.length + 1 ) );
+			var _this = this;
+			// Add a slight random variation in retype time to make the letter typing seem more 'human'
+			var time = Math.round( Math.random() * 100 ) + 100;
+			setTimeout( function(){
+				_this.elem.innerHTML = newLetters;
+				_this.newLetter();
+			}, time );
+		}else{
+			this.start();
+			// Yep, this makes the retype an infinite loop
+		}// END if( newLetters.length > newWord.length )
+	}// END retype.newLetter()
+};
+
+retype.start();
+</script>
 </html>
