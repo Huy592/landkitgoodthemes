@@ -77,4 +77,3 @@ function checkSubmit () {
 }
 
 /*slider*/
-
